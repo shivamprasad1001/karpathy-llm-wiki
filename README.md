@@ -62,8 +62,20 @@ This repo serves as a boilerplate for a dual-pane UI often required in complex A
 
 - **Live Ingestion Simulation**: Watch standard source material iteratively digest into an active wiki output panel.
 - **D3 Force Knowledge Graph**: Fully draggable physics nodes mapped to specific styles (`Concepts`, `Entities`, `Sources`).
-- **Semantic Link Mapping**: Click on any node in the graph to dim the noise and highlight its direct relationship edges. 
-- **Deterministic Truth Resolving**: Demo visualizes conflicting documents initially tethered by a dashed red edge, and turning into a solid gold connection once the paradox is formally resolved by the AI.
+  - **Deterministic Truth Resolving**: Demo visualizes conflicting documents initially tethered by a dashed red edge, and turning into a solid gold connection once the paradox is formally resolved by the AI.
+
+## 🤝 Call for Contributors: The Future of LLM Wiki
+
+Right now, this repository is a **static simulation** of what an LLM Wiki layout should look like. We are actively looking for contributors (both researchers and developers) to help us build the next phase: **true interactivity**.
+
+We want to connect this visualizer directly to an active back-end so that users can:
+1. **Upload Actual PDFs**: Feed raw documents into a Python/FastAPI backend.
+2. **Watch Live LLM Agents**: Hook up a real agent (like Claude Model or OpenAI) that extracts entities and concepts from the uploaded document on the fly.
+3. **Real-time WebSockets**: Push the JSON nodes dynamically to our `d3-force` front-end and watch the knowledge graph explode and reorganize based on *actual model inferences* in real-time.
+
+If you have experience with local LLMs, LangChain, or agentic frameworks, **feel free to fork this project and open a PR**! Let's wire this up to a real intelligence layer.
+
+---
 
 ## License
 MIT License. Feel free to clone, hack, and deploy this visualizer to accompany your own AI agent setups!
