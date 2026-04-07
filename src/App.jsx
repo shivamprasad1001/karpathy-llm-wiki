@@ -4,10 +4,12 @@ import { Navbar, Band, HowItWorks, Comparison, Architecture, UseCases, Quote, Fo
 import { Hero } from './components/Hero';
 import { InteractiveDemo } from './components/InteractiveDemo';
 import { OriginalPaper } from './components/OriginalPaper';
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   return (
     <div className="app">
+      <Analytics />
       <Navbar />
       <Hero />
       <Band />
